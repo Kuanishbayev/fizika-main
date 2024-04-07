@@ -359,10 +359,10 @@ export const LeftNavbar: React.FC<collapsed> = ({ collapsed, setCollapsed }) => 
 
                 <Menu.SubMenu key="glossariy" title={<span>Glossariy</span>}>
                     <Menu.Item key="glossariy-tekst">
-                        <Link to="/glossariy/tekst">Glossariy teksti</Link>
+                        <Link to="/Glossariy/tekst">Glossariy teksti</Link>
                     </Menu.Item>
                     <Menu.Item key="cifrlı-elektron-glossariy">
-                        <Link to="/glossariy/elektron">Cifrlı elektron glossariy</Link>
+                        <Link to="/Glossariy/cifrlı-elektron-glossariy">Cifrlı elektron glossariy</Link>
                     </Menu.Item>
                 </Menu.SubMenu>
 

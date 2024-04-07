@@ -40,6 +40,8 @@ import { ElektrSiyimliligiKondensatorlar } from '../pages/Panler-bazasi/8-klass/
 import { TutiniwshilardiParallelTutastiriw } from '../pages/Panler-bazasi/8-klass/Prezentaciyalar/tekst/TutiniwshilardiParallelTutastiriw'
 import { TutiniwshilardiIzbeIzTutastiriw } from '../pages/Panler-bazasi/8-klass/Prezentaciyalar/tekst/TutiniwshilardiIzbeIzTutastiriw'
 import { Shinigiw28 } from '../pages/Panler-bazasi/10-klass/Máseleler/tekst/Shinigiw28'
+import { GlossariyTekst } from '../pages/Glossariy/tekst'
+import { CifrliElektronGlossariy } from '../pages/Glossariy/cifrli-elektron-glossariy'
 
 const Routers: React.FC = () => {
     return (
@@ -47,6 +49,8 @@ const Routers: React.FC = () => {
 
             <Route path='/' element={<Home />} />
             <Route path='/annotaciya' element={<Annotaciya />} />
+            <Route path='/Glossariy/tekst' element={<GlossariyTekst />} />
+            <Route path='/Glossariy/cifrlı-elektron-glossariy' element={<CifrliElektronGlossariy />} />
             {/* 7-Klass */}
             <Route path='/panler-bazasi/7-klass/joybar-jumislari/tekst' element={< JoyborTekst7 />} />
             <Route path='/panler-bazasi/7-klass/joybar-jumislari/video' element={< JoyborVideo7 />} />
