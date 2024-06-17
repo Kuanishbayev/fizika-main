@@ -109,6 +109,10 @@ export const LeftNavbar: React.FC<collapsed> = ({ collapsed, setCollapsed }) => 
                             </Menu.Item>
                         </Menu.SubMenu>
 
+                        <Menu.Item key="test-7" title={<span>Test</span>} >
+                            <Link to="/panler-bazasi/7-klass/test">Test</Link>
+                        </Menu.Item>
+
                     </Menu.SubMenu>
 
                     <Menu.SubMenu key="sub-2" title={<span>8-klass</span>}>
@@ -169,6 +173,10 @@ export const LeftNavbar: React.FC<collapsed> = ({ collapsed, setCollapsed }) => 
                                 <Link to="/panler-bazasi/8-klass/joybar-jumislari/video">Video joybar jumıslar</Link>
                             </Menu.Item>
                         </Menu.SubMenu>
+
+                        <Menu.Item key="test-8" title={<span>Test</span>} >
+                            <Link to="/panler-bazasi/8-klass/test">Test</Link>
+                        </Menu.Item>
 
                     </Menu.SubMenu>
 
