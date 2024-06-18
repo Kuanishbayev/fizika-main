@@ -69,7 +69,7 @@ const Routers: React.FC = () => {
             <Route path='/panler-bazasi/7-klass/oz-betinshe/video' element={< OzBetinsheVideo7 />} />
             
             {/* Test */}
-            <Route path='/panler-bazasi/7-klass/test' element={<Test7 />} />
+            <Route path='/elektron-testler/7-klass' element={<Test7 />} />
 
             {/* Ameliy */}
             <Route path='/panler-bazasi/7-klass/ameliy/tekst/Ampermetr-jardeminde-tutınıwshıdan-ótip-atırǵan-tok-kúshin-ólshew.pdf' element={< Ampermetr />} />
@@ -103,7 +103,7 @@ const Routers: React.FC = () => {
             <Route path='/panler-bazasi/8-klass/oz-betinshe/video' element={< OzBetinsheVideo8 />} />
 
             {/* Test */}
-            <Route path='/panler-bazasi/8-klass/test' element={<Test8 />} />
+            <Route path='/elektron-testler/8-klass' element={<Test8 />} />
 
             {/* Prezentaciya */}
             <Route path='/panler-bazasi/8-klass/Prezentaciyalar/tekst/elektr-toginin-quwatliligi' element={< ElektrTogininQuwatliligi />} />
