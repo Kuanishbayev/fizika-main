@@ -8,7 +8,7 @@ const Login = () => {
   const navigate = useNavigate()
 
   const onSubmit = async (data) => {
-    toast('Please wait...')
+    toast('Iltimas kútiń...')
     const res = await fetch(`${url}/api/login`, {
             method: 'POST',
             headers: {
@@ -26,7 +26,7 @@ const Login = () => {
           window.localStorage.setItem('token', response.token)
           navigate('/')
         } else {
-          toast.error("Login or password is wrong!")
+          toast.error("E-Pochta yamasa parol qáte kiritildi!")
         }
   }
 
@@ -34,14 +34,14 @@ const Login = () => {
     <>
       <form className='flex flex-col p-4 lg:p-0 max-w-sm mx-auto my-20 gap-2' onSubmit={handleSubmit(onSubmit)}>
           <div className='flex flex-col mb-2 gap-2'>
-              <label htmlFor="email">Email</label>
+              <label htmlFor="email">E-Pochta</label>
               <input {...register("email")} className='ring-1 ring-inset ring-gray-300 rounded-md border-0 focus:ring-indigo-600 shadow-sm py-1.5 px-2 outline-none' type="email" id='email' required />
           </div>
           <div className='flex flex-col mb-2 gap-2'>
-              <label htmlFor="password">Password</label>
+              <label htmlFor="password">Parol</label>
               <input {...register("password")} className='ring-1 ring-inset ring-gray-300 rounded-md border-0 focus:ring-indigo-600 shadow-sm py-1.5 px-2 outline-none' type="password" id='password' required />
           </div>
-          <button className='bg-indigo-600 rounded-md text-white p-1.5 font-semibold'>Login to dashboard</button>
+          <button className='bg-indigo-600 rounded-md text-white p-1.5 font-semibold'>Kiriw</button>
       </form>
 
       <Toaster />
