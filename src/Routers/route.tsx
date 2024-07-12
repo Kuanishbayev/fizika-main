@@ -46,6 +46,9 @@ import { Test7 } from '../pages/Panler-bazasi/7-klass/test'
 import { Test8 } from '../pages/Panler-bazasi/8-klass/test'
 import ProtectedRoutes from '../utils/ProtectedRoutes'
 import Login from '../pages/Login'
+import { Kalendar_tematikaliqa_joba } from '../pages/Qosimshalar/kalendar-tematikaliq-reje'
+import { Test_8_klass } from '../pages/Qosimshalar/test-sorawlari/sorawlar-teksti/Test_8_klass'
+import { Sorawlar_Teksti } from '../pages/Qosimshalar/test-sorawlari/sorawlar-teksti'
 
 const Routers: React.FC = () => {
     return (
@@ -181,6 +184,13 @@ const Routers: React.FC = () => {
                 <Route path='/panler-bazasi/11-klass/ameliy/video' element={< AmeliyVideo11 />} />
                 <Route path='/panler-bazasi/11-klass/oz-betinshe/tekst' element={< OzBetinsheTekst11 />} />
                 <Route path='/panler-bazasi/11-klass/oz-betinshe/video' element={< OzBetinsheVideo11 />} />
+
+                {/* Qosimshalar => Kalendar tematikaliq reje */}
+                <Route path='/kalendar-tematikalıq-reje' element={<Kalendar_tematikaliqa_joba />} />
+                
+                {/* Qosimshalar => Test sorawlari */}
+                <Route path='/sorawları-teksti' element={<Sorawlar_Teksti />} />
+                <Route path='/sorawları-teksti/8-klass' element={<Test_8_klass />} />
             </Route>
         </Routes>
     )
