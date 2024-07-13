@@ -49,6 +49,7 @@ import Login from '../pages/Login'
 import { Kalendar_tematikaliqa_joba } from '../pages/Qosimshalar/kalendar-tematikaliq-reje'
 import { Test_8_klass } from '../pages/Qosimshalar/test-sorawlari/sorawlar-teksti/Test_8_klass'
 import { Sorawlar_Teksti } from '../pages/Qosimshalar/test-sorawlari/sorawlar-teksti'
+import { Test_7_klass } from '../pages/Qosimshalar/test-sorawlari/sorawlar-teksti/Test_7_klass'
 
 const Routers: React.FC = () => {
     return (
@@ -191,6 +192,7 @@ const Routers: React.FC = () => {
                 {/* Qosimshalar => Test sorawlari */}
                 <Route path='/sorawları-teksti' element={<Sorawlar_Teksti />} />
                 <Route path='/sorawları-teksti/8-klass' element={<Test_8_klass />} />
+                <Route path='/sorawları-teksti/7-klass' element={<Test_7_klass />} />
             </Route>
         </Routes>
     )
