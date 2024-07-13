@@ -237,3 +237,14 @@ main object {
   width: 100%;
   height: 100%;
 }
+
+.pdf-box {
+  position: relative;
+}
+
+.download-file {
+  transform: scale(2);
+  position: absolute;
+  right: 70px;
+  top: 50px;
+}
