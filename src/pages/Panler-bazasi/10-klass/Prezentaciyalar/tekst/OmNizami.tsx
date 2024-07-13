@@ -5,7 +5,7 @@ export const OmNizami = () => {
 
     return (
         <div className="pdf-box">
-            <a href={fileURL + "/export?format=docx"} title="Download this file" className="download-file">
+            <a href={fileURL + "/export?format=pptx"} title="Download this file" className="download-file">
                 <FaFileDownload />
             </a>
             <h3>Tolıq shınjır ushın Om nızamı</h3>

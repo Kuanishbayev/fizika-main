@@ -5,7 +5,7 @@ export const ShinjirdinBirBolegiUshinOmNizami = () => {
 
     return (
         <div className="pdf-box">
-            <a href={fileURL + "/export?format=docx"} title="Download this file" className="download-file">
+            <a href={"https://drive.usercontent.google.com/u/0/uc?id=16N9tMRI2TEv3MI6UnE3aEY8knD_aAmiI&export=download"} title="Download this file" className="download-file">
                 <FaFileDownload />
             </a>
             <h3>Shınjırdıń bir bólegi ushın Om nızamı</h3>
