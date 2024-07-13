@@ -14,8 +14,8 @@ import {
     PrezentatsiyaVideo10, PrezentatsiyaVideo11, PrezentatsiyaVideo7, PrezentatsiyaVideo8, PrezentatsiyaVideo9
 } from '../pages'
 import { Ampermetr } from '../pages/Panler-bazasi/7-klass/Ámeliy-shınıǵıwlar/tekst/Ampermetr'
-import Ommetr from '../pages/Panler-bazasi/7-klass/Ámeliy-shınıǵıwlar/tekst/Ommetr'
-import Reostat from '../pages/Panler-bazasi/7-klass/Ámeliy-shınıǵıwlar/tekst/Reostat'
+import { Ommetr } from '../pages/Panler-bazasi/7-klass/Ámeliy-shınıǵıwlar/tekst/Ommetr'
+import { Reostat } from '../pages/Panler-bazasi/7-klass/Ámeliy-shınıǵıwlar/tekst/Reostat'
 import { TokKushi } from '../pages/Panler-bazasi/10-klass/Prezentaciyalar/tekst/TokKushi'
 import { OmNizami } from '../pages/Panler-bazasi/10-klass/Prezentaciyalar/tekst/OmNizami'
 import { ElektrTogininQuwatliligi } from '../pages/Panler-bazasi/8-klass/Prezentaciyalar/tekst/ElektrTogininQuwatliligi'

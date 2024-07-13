@@ -245,8 +245,8 @@ main object {
 .download-file {
   transform: scale(2);
   position: absolute;
-  right: 70px;
-  top: 50px;
+  right: 0px;
+  top: 0px;
 }
 
 /* For mobile phones: */
