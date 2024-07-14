@@ -50,6 +50,8 @@ import { Kalendar_tematikaliqa_joba } from '../pages/Qosimshalar/kalendar-temati
 import { Test_8_klass } from '../pages/Qosimshalar/test-sorawlari/sorawlar-teksti/Test_8_klass'
 import { Sorawlar_Teksti } from '../pages/Qosimshalar/test-sorawlari/sorawlar-teksti'
 import { Test_7_klass } from '../pages/Qosimshalar/test-sorawlari/sorawlar-teksti/Test_7_klass'
+import { Tema51 } from '../pages/Panler-bazasi/7-klass/Laboratoriya-shınıǵıwları/tekst/Tema51'
+import { Tema57 } from '../pages/Panler-bazasi/7-klass/Laboratoriya-shınıǵıwları/tekst/Tema57'
 
 const Routers: React.FC = () => {
     return (
@@ -91,8 +93,12 @@ const Routers: React.FC = () => {
                 <Route path='/panler-bazasi/7-klass/Prezentaciyalar/tekst/rezistorlar-reostatlar' element={< RezistorlarReostatlar />} />
 
                 {/* Masele */}
-                <Route path='/panler-bazasi/7-klass/Masele/tekst/33-shinigiw' element={< Shinigiw33 />} />
-                <Route path='/panler-bazasi/7-klass/Masele/tekst/50-tema' element={< Tema50 />} />
+                <Route path='/panler-bazasi/7-klass/Masele/tekst/33-shinigiw' element={<Shinigiw33 />} />
+                <Route path='/panler-bazasi/7-klass/Masele/tekst/50-tema' element={<Tema50 />} />
+
+                {/* Laboratoriya shinigiwlari */}
+                <Route path='/panler-bazasi/7-klass/laboratoriya-shinigiwlari/tekst/51-tema' element={<Tema51 />} />
+                <Route path='/panler-bazasi/7-klass/laboratoriya-shinigiwlari/tekst/57-tema' element={<Tema57 />} />
 
                 {/* 8-Klass */}
                 <Route path='/panler-bazasi/8-klass/joybar-jumislari/tekst' element={< JoyborTekst8 />} />
