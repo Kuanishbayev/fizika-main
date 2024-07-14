@@ -91,14 +91,14 @@ export const LeftNavbar: React.FC<collapsed> = ({ collapsed, setCollapsed }) => 
                             </Menu.Item>
                         </Menu.SubMenu>
 
-                        <Menu.SubMenu key="oz-betinshe-7" title={<span>Óz betinshe tálim shınıǵıwları</span>} >
+                        {/* <Menu.SubMenu key="oz-betinshe-7" title={<span>Óz betinshe tálim shınıǵıwları</span>} >
                             <Menu.Item key="oz-betinshe-tekst-7">
                                 <Link to="/panler-bazasi/7-klass/oz-betinshe/tekst">Óz betinshe teksti</Link>
                             </Menu.Item>
                             <Menu.Item key="oz-betinshe-video-7">
                                 <Link to="/panler-bazasi/7-klass/oz-betinshe/video">Video óz betinsheler</Link>
                             </Menu.Item>
-                        </Menu.SubMenu>
+                        </Menu.SubMenu> */}
 
                         <Menu.SubMenu key="joybar-jumışlari-7" title={<span>Joybar jumısları</span>} >
                             <Menu.Item key="joybar-jumışları-tekst-7">
