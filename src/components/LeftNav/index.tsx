@@ -400,11 +400,11 @@ export const LeftNavbar: React.FC<collapsed> = ({ collapsed, setCollapsed }) => 
                 </Menu.Item>
 
                 <Menu.Item key="gúwalıqlar">
-                    <Link to="/gúwalıqlar">Gúwalıqlar</Link>
+                    <Link to="/guwaliqlar">Gúwalıqlar</Link>
                 </Menu.Item>
 
                 <Menu.Item key="avtor">
-                    <Link to="/avtor">Avtor haqqında maǵlıwmat</Link>
+                    <Link to="/avtor-haqqinda-magliwmat">Avtor haqqında maǵlıwmat</Link>
                 </Menu.Item>
 
             </Menu>

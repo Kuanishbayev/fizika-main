@@ -52,6 +52,10 @@ import { Sorawlar_Teksti } from '../pages/Qosimshalar/test-sorawlari/sorawlar-te
 import { Test_7_klass } from '../pages/Qosimshalar/test-sorawlari/sorawlar-teksti/Test_7_klass'
 import { Tema51 } from '../pages/Panler-bazasi/7-klass/Laboratoriya-shınıǵıwları/tekst/Tema51'
 import { Tema57 } from '../pages/Panler-bazasi/7-klass/Laboratoriya-shınıǵıwları/tekst/Tema57'
+import { Guwaliq1 } from '../pages/guwaliqlar/Guwaliq1'
+import { Guwaliq2 } from '../pages/guwaliqlar/Guwaliq2'
+import { Guwaliqlar } from '../pages/guwaliqlar'
+import { AvtorHaqqindaMagliwmat } from '../pages/avtor-haqqinda-magliwmat'
 
 const Routers: React.FC = () => {
     return (
@@ -199,6 +203,14 @@ const Routers: React.FC = () => {
                 <Route path='/sorawları-teksti' element={<Sorawlar_Teksti />} />
                 <Route path='/sorawları-teksti/8-klass' element={<Test_8_klass />} />
                 <Route path='/sorawları-teksti/7-klass' element={<Test_7_klass />} />
+
+                {/* Guwaliqlar */}
+                <Route path='/guwaliqlar' element={<Guwaliqlar />} />
+                <Route path='/guwaliqlar/1' element={<Guwaliq1 />} />
+                <Route path='/guwaliqlar/2' element={<Guwaliq2 />} />
+
+                {/* Avtor haqqinda magliwmat */}
+                <Route path='/avtor-haqqinda-magliwmat' element={<AvtorHaqqindaMagliwmat />} />
             </Route>
         </Routes>
     )
