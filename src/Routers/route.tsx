@@ -58,7 +58,9 @@ import { Guwaliqlar } from '../pages/guwaliqlar'
 import { AvtorHaqqindaMagliwmat } from '../pages/avtor-haqqinda-magliwmat'
 import { MobilQosimshalar } from '../pages/Qosimshalar/mobil-qosimshalar'
 
+
 const Routers: React.FC = () => {
+    
     return (
         <Routes>
             <Route path="login" element={<Login />} />

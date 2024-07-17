@@ -2,10 +2,16 @@ import { useForm } from 'react-hook-form'
 import { useNavigate } from "react-router-dom"
 import toast, { Toaster } from 'react-hot-toast';
 import { url } from '../utils/Url';
+import { hex_to_ascii } from '../utils/hexToAscii';
 
 const Login = () => {
   const { register, handleSubmit } = useForm()
   const navigate = useNavigate()
+
+  const EMAIL="61646d696e406578616d706c652e636f6d"
+  const PASSWORD="3132333435363738"
+
+  const clearMinute = 5;
 
   const onSubmit = (data) => {
     // toast('Iltimas kútiń...')
@@ -28,15 +34,20 @@ const Login = () => {
     //     } else {
     //       toast.error("E-Pochta yamasa parol qáte kiritildi!")
     //     }
+    
 
-    // if (data.email === process.env.EMAIL && data.password === process.env.PASSWORD) {
-    //   window.localStorage.setItem('token', 'uh32hrsbahj')
-    //   navigate('/')
-    // } else {
-    //   toast.error("E-Pochta yamasa parol qáte kiritildi!")
-    // }
+    if (data.email === hex_to_ascii(EMAIL) && data.password === hex_to_ascii(PASSWORD)) {
+      window.localStorage.setItem('token', Date.now())
 
-    console.log(process.env.PASSWORD);
+      setTimeout(() => {
+        window.localStorage.clear()
+        navigate('/login')
+      }, clearMinute * 60 * 1000);
+
+      navigate('/')
+    } else {
+      toast.error("E-Pochta yamasa parol qáte kiritildi!")
+    }
   }
 
   return (
