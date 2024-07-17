@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, useLocation } from "react-router-dom"
+import { Link } from "react-router-dom"
 import { Menu } from "antd";
 import Sider from "antd/es/layout/Sider";
 import { MenuFoldOutlined, MenuUnfoldOutlined, } from '@ant-design/icons';
@@ -12,8 +12,6 @@ type collapsed = {
 }
 
 export const LeftNavbar: React.FC<collapsed> = ({ collapsed, setCollapsed }) => {
-    const location = useLocation();
-    console.log(location)
 
     return (
         <Sider
