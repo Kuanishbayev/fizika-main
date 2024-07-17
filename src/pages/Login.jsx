@@ -7,27 +7,36 @@ const Login = () => {
   const { register, handleSubmit } = useForm()
   const navigate = useNavigate()
 
-  const onSubmit = async (data) => {
-    toast('Iltimas kútiń...')
-    const res = await fetch(`${url}/api/login`, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-              'email': data.email,
-              'password': data.password
-            })
-        });
+  const onSubmit = (data) => {
+    // toast('Iltimas kútiń...')
+    // const res = await fetch(`${url}/api/login`, {
+    //         method: 'POST',
+    //         headers: {
+    //             'Content-Type': 'application/json',
+    //         },
+    //         body: JSON.stringify({
+    //           'email': data.email,
+    //           'password': data.password
+    //         })
+    //     });
       
-        const response = await res.json();
+    //     const response = await res.json();
 
-        if (response.success) {
-          window.localStorage.setItem('token', response.token)
-          navigate('/')
-        } else {
-          toast.error("E-Pochta yamasa parol qáte kiritildi!")
-        }
+    //     if (response.success) {
+    //       window.localStorage.setItem('token', response.token)
+    //       navigate('/')
+    //     } else {
+    //       toast.error("E-Pochta yamasa parol qáte kiritildi!")
+    //     }
+
+    // if (data.email === process.env.EMAIL && data.password === process.env.PASSWORD) {
+    //   window.localStorage.setItem('token', 'uh32hrsbahj')
+    //   navigate('/')
+    // } else {
+    //   toast.error("E-Pochta yamasa parol qáte kiritildi!")
+    // }
+
+    console.log(process.env.PASSWORD);
   }
 
   return (
