@@ -389,8 +389,8 @@ export const LeftNavbar: React.FC<collapsed> = ({ collapsed, setCollapsed }) => 
                         </Menu.SubMenu>
                     </Menu.SubMenu>
 
-                    <Menu.Item key="mobil-qosımshalar">
-                        <Link to="/mobil-qosımshalar">Mobil qosımshalar</Link>
+                    <Menu.Item key="mobil-qosimshalar">
+                        <Link to="/mobil-qosimshalar">Mobil qosımshalar</Link>
                     </Menu.Item>
 
                 </Menu.SubMenu>
